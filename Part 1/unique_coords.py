@@ -8,10 +8,7 @@ def unique_coords(coords):
     Example:
     unique_coords([(1,2), (3,4), (3,4), (1,2)]) → {(1,2), (3,4)}
     """
-    uniqueSet = set ()
-    for i in range(len(coords)):
-        if coords[i] not in uniqueSet:
-            uniqueSet.add(coords[i])
+    uniqueSet = set(coords)
     return uniqueSet
 
 def main():
